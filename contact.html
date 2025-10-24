@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-5" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact - MySite</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+
+<div class="w3-bar w3-light-grey w3-padding">
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-wide">MySite</a>
+  <div class="w3-right w3-hide-small">
+    <a href="index.html" class="w3-bar-item w3-button">Home</a>
+    <a href="education.html" class="w3-bar-item w3-button">Education</a>
+    <a href="hobbies.html" class="w3-bar-item w3-button">Hobbies</a>
+    <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
+    <a href="about.html" class="w3-bar-item w3-button">About Me</a>
+  </div>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="toggleMenu()">☰</a>
+</div>
+
+<nav id="mobileMenu" class="w3-hide w3-white w3-bar-block w3-border-top">
+    <a href="index.html" class="w3-bar-item w3-button">Home</a>
+    <a href="education.html" class="w3-bar-item w3-button">Education</a>
+    <a href="hobbies.html" class="w3-bar-item w3-button">Hobbies</a>
+    <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
+    <a href="about.html" class="w3-bar-item w3-button">About Me</a>
+</nav>
+
+<div class="w3-container w3-padding-48">
+  <h2>Contact</h2>
+
+  <!-- SHORT FORM -->
+  <section class="w3-card w3-padding w3-margin-bottom">
+    <h3>Newsletter Signup</h3>
+    <form class="w3-form" onsubmit="event.preventDefault(); alert('Short form submitted (demo)')">
+      <label class="w3-label">Email</label>
+      <input class="w3-input w3-border" type="email" placeholder="you@example.com" required />
+      <button class="w3-button w3-margin-top">Subscribe</button>
+    </form>
+  </section>
+
+  <!-- LONG FORM -->
+  <section class="w3-card w3-padding">
+    <h3>Contact Us</h3>
+    <form class="w3-form" onsubmit="event.preventDefault(); alert('Long form submitted (demo)')">
+      <div class="w3-row">
+        <div class="w3-col s12 m6">
+          <label class="w3-label">Name</label>
+          <input class="w3-input w3-border" type="text" name="name" required />
+        </div>
+        <div class="w3-col s12 m6">
+          <label class="w3-label">Email</label>
+          <input class="w3-input w3-border" type="email" name="email" required />
+        </div>
+      </div>
+
+      <label class="w3-label">Subject</label>
+      <select class="w3-input w3-border" name="subject">
+        <option>General Question</option>
+        <option>Feedback</option>
+        <option>Partnership</option>
+      </select>
+
+      <label class="w3-label">Message</label>
+      <textarea class="w3-input w3-border" rows="6" name="message" placeholder="Write your message..." required></textarea>
+
+      <button class="w3-button w3-margin-top">Submit</button>
+    </form>
+  </section>
+</div>
+
+<footer class="w3-center w3-padding-24 w3-light-grey">
+  <p>© Example Site</p>
+</footer>
+
+<script>
+function toggleMenu() {
+  var x = document.getElementById("mobileMenu");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+</body>
+</html>

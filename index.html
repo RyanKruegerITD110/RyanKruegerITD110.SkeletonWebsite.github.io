@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-5" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ryan Krueger's Portfolio - Home</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<div class="w3-bar w3-light-grey w3-padding">
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-wide">Ryan Krueger's Portfolio</a>
+  <div class="w3-right w3-hide-small">
+    <a href="index.html" class="w3-bar-item w3-button">Home</a>
+    <a href="education.html" class="w3-bar-item w3-button">Education</a>
+    <a href="hobbies.html" class="w3-bar-item w3-button">Hobbies</a>
+    <a href="contact.html" class="w3-bar-item w3-button">Experiences</a>
+    <a href="about.html" class="w3-bar-item w3-button">About Me</a>
+  </div>
+
+<!-- Mobile menu (hidden by default) -->
+<nav id="mobileMenu" class="w3-hide w3-white w3-bar-block w3-border-top">
+    <a href="index.html" class="w3-bar-item w3-button">Home</a>
+    <a href="education.html" class="w3-bar-item w3-button">Education</a>
+    <a href="hobbies.html" class="w3-bar-item w3-button">Hobbies</a>
+    <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
+    <a href="about.html" class="w3-bar-item w3-button">About Me</a></a>
+</nav>
+
+<!-- HERO -->
+<header class="w3-container w3-center w3-padding-48">
+  <h1 class="w3-xxlarge">Welcome to My Portfolio</h1>
+  <p class="w3-large">A responsive W3.CSS layout example — Lorem ipsum dolor sit amet.</p>
+</header>
+
+<!-- MAIN GRID -->
+<div class="w3-row-padding w3-container">
+  <div class="w3-col s12 m6 l8">
+    <div class="w3-card w3-padding">
+      <h3>Main Content</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, officia.</p>
+      <p>Use this area to match your wireframe: two-column on tablet, three on desktop, stacked on mobile.</p>
+    </div>
+  </div>
+
+  <aside class="w3-col s12 m6 l4">
+    <div class="w3-card w3-padding">
+      <h4>Sidebar</h4>
+      <p>Placeholder content — widgets, links, contact info.</p>
+    </div>
+  </aside>
+</div>
+
+<!-- FEATURE GRID -->
+<div class="w3-container w3-row-padding w3-margin-top">
+  <div class="w3-col s12 m4">
+    <div class="w3-card w3-padding">
+      <h4>Feature 1</h4>
+      <p>Lorem ipsum dolor sit amet</p>
+    </div>
+  </div>
+  <div class="w3-col s12 m4">
+    <div class="w3-card w3-padding">
+      <h4>Feature 2</h4>
+      <p>Lorem ipsum dolor sit amet</p>
+    </div>
+  </div>
+  <div class="w3-col s12 m4">
+    <div class="w3-card w3-padding">
+      <h4>Feature 3</h4>
+      <p>Lorem ipsum dolor sit amet</p>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="w3-center w3-padding-24 w3-light-grey w3-margin-top">
+  <p>© Example Site</p>
+</footer>
+
+<script>
+function toggleMenu() {
+  var x = document.getElementById("mobileMenu");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>

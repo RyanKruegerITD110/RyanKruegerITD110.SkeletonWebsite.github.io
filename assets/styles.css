@@ -1,0 +1,5 @@
+/* Basic site styles and layout helpers */
+body { font-family: "Segoe UI", Roboto, Arial, sans-serif; }
+header h1 { margin:0; }
+.w3-content { margin:auto; }
+.mySlides { display:none; }

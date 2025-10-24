@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-5" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About - MySite</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+
+<div class="w3-bar w3-light-grey w3-padding">
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-wide">MySite</a>
+  <div class="w3-right w3-hide-small">
+    <a href="index.html" class="w3-bar-item w3-button">Home</a>
+    <a href="education.html" class="w3-bar-item w3-button">Education</a>
+    <a href="hobbies.html" class="w3-bar-item w3-button">Hobbies</a>
+    <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
+    <a href="about.html" class="w3-bar-item w3-button">About Me</a>
+  </div>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="toggleMenu()">☰</a>
+</div>
+
+<nav id="mobileMenu" class="w3-hide w3-white w3-bar-block w3-border-top">
+    <a href="index.html" class="w3-bar-item w3-button">Home</a>
+    <a href="education.html" class="w3-bar-item w3-button">Education</a>
+    <a href="hobbies.html" class="w3-bar-item w3-button">Hobbies</a>
+    <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
+    <a href="about.html" class="w3-bar-item w3-button">About Me</a>
+</nav>
+
+<div class="w3-container w3-padding-48">
+  <h2>Education</h2>
+  <div class="w3-row-padding">
+    <div class="w3-col s12 m6">
+      <img src="https://via.placeholder.com/600x400?text=Education+Image" alt="Education" style="width:100%" />
+    </div>
+    <div class="w3-col s12 m6">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, facere.</p>
+      <p>Use this page to detail your project's purpose, mission, or bio — structured to match your wireframe.</p>
+    </div>
+  </div>
+
+  <h3 class="w3-margin-top">Team Grid</h3>
+  <div class="w3-row-padding">
+    <div class="w3-col s12 m4">
+      <div class="w3-card w3-padding">
+        <img src="https://via.placeholder.com/300x200?text=Person" alt="Person" style="width:100%" />
+        <h4>High School</h4>
+        <p>Lorem ipsum dolor sit.</p>
+      </div>
+    </div>
+    <div class="w3-col s12 m4">
+      <div class="w3-card w3-padding">
+        <img src="https://via.placeholder.com/300x200?text=Person" alt="Person" style="width:100%" />
+        <h4>College</h4>
+        <p>Lorem ipsum dolor sit.</p>
+      </div>
+    </div>
+    <div class="w3-col s12 m4">
+      <div class="w3-card w3-padding">
+        <img src="https://via.placeholder.com/300x200?text=Person" alt="Person" style="width:100%" />
+        <h4>Other</h4>
+        <p>Lorem ipsum dolor sit.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+function toggleMenu() {
+  var x = document.getElementById("mobileMenu");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+</body>
+</html>
